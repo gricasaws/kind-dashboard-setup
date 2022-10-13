@@ -10,7 +10,7 @@ You have a kubernetes cluster configured and are using the proper context with `
 2. Create cluster by running `kind create cluster --config=config.yaml`. 
 3. Check kubernetes config by running `kubectl get nodes -o wide`. You should see some output like this: 
 ![alt text](kind-ready.png)
-4. Now let's apply the Dashboard. Run `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml`
+4. Now let's apply the Dashboard. Run `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.6.1/aio/deploy/recommended.yaml`
 5. Run `kubectl apply -f dashboard-adminuser.yaml`
 6. Run `kubectl apply -f clusterrolebinding.yaml`
 7. Run `kubectl proxy`
